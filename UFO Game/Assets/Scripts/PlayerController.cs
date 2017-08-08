@@ -17,8 +17,8 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		float moveHorizontal = Input.GetAxis("horizontal");
-		float moveVertical = Input.GetAxis("vertical");
+		float moveHorizontal = Input.GetAxis("Horizontal");
+		float moveVertical = Input.GetAxis("Vertical");
 		Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
 		rigidBody2d.AddForce (movement);
 	}
